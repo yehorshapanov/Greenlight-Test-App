@@ -1,4 +1,4 @@
 # Greenlight-Test-App
-To run:
- carthage update --platform iOS
+To run:<br />
+ carthage update --platform iOS<br />
  open Greenlight\ Test\ App.xcodeproj/
