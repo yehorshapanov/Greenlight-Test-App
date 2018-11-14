@@ -14,6 +14,8 @@
 		1A44B369219C878900EF2BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A44B367219C878900EF2BBB /* LaunchScreen.storyboard */; };
 		1A44B374219C878900EF2BBB /* Greenlight_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A44B373219C878900EF2BBB /* Greenlight_Test_AppTests.swift */; };
 		1A44B37F219C878900EF2BBB /* Greenlight_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A44B37E219C878900EF2BBB /* Greenlight_Test_AppUITests.swift */; };
+		1AF9FBE1219C920400A52132 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF9FBDF219C920400A52132 /* Realm.framework */; };
+		1AF9FBE2219C920400A52132 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF9FBE0219C920400A52132 /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1A44B37A219C878900EF2BBB /* Greenlight Test AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Greenlight Test AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A44B37E219C878900EF2BBB /* Greenlight_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greenlight_Test_AppUITests.swift; sourceTree = "<group>"; };
 		1A44B380219C878900EF2BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF9FBDF219C920400A52132 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		1AF9FBE0219C920400A52132 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF9FBE2219C920400A52132 /* RealmSwift.framework in Frameworks */,
+				1AF9FBE1219C920400A52132 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 		1A44B352219C878800EF2BBB = {
 			isa = PBXGroup;
 			children = (
+				1AF9FBDF219C920400A52132 /* Realm.framework */,
+				1AF9FBE0219C920400A52132 /* RealmSwift.framework */,
 				1A44B35D219C878800EF2BBB /* Greenlight Test App */,
 				1A44B372219C878900EF2BBB /* Greenlight Test AppTests */,
 				1A44B37D219C878900EF2BBB /* Greenlight Test AppUITests */,
@@ -433,6 +441,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Greenlight Test App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +462,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Greenlight Test App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
